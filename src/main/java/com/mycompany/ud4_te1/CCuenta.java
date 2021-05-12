@@ -1,7 +1,7 @@
 package com.mycompany.ud4_te1;
 
 /**
- * Funcionalidad de la clase
+ * Esta clase representa la cuenta de un cliente en el banco y podemos trabajar sobre el nombre, el numero de cuenta, el saldo y el interes de ella.
  * @version 2.1
  * @author ulhi
  */
@@ -41,8 +41,8 @@ public class CCuenta {
     }
 
     /**
-     * 
-     * @return the saldo
+     * Devuelve el valor de la variable que almacena el saldo actual
+     * @return el valor del saldo de la cuenta
      */
     public double getSaldo() {
         return saldo;
@@ -97,9 +97,12 @@ public class CCuenta {
     }
 
     /**
-     *
+     * Ingresa la cantidad indicada en la cuenta.
+     * 
      * @param cantidad
+     *          la cantidad de dinero a ingresar en esta cuenta
      * @throws Exception
+     *          si la cantidad es un valor negativo
      */
     public void ingresar(double cantidad) throws Exception {
         if (cantidad < 0) {
