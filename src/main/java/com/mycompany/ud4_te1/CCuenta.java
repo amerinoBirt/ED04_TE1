@@ -1,7 +1,8 @@
 package com.mycompany.ud4_te1;
 
 /**
- *
+ * Funcionalidad de la clase
+ * @version 2.1
  * @author ulhi
  */
 public class CCuenta {
@@ -40,6 +41,7 @@ public class CCuenta {
     }
 
     /**
+     * 
      * @return the saldo
      */
     public double getSaldo() {
