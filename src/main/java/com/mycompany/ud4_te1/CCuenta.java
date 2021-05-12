@@ -42,7 +42,7 @@ public class CCuenta {
 
     /**
      * Devuelve el valor de la variable que almacena el saldo actual
-     * @return el valor del saldo de la cuenta
+     * @return el valor del <i>saldo</i> de la cuenta
      */
     public double getSaldo() {
         return saldo;
@@ -102,7 +102,7 @@ public class CCuenta {
      * @param cantidad
      *          la cantidad de dinero a ingresar en esta cuenta
      * @throws Exception
-     *          si la cantidad es un valor negativo
+     *          si la <i>cantidad</i> es un valor negativo
      */
     public void ingresar(double cantidad) throws Exception {
         if (cantidad < 0) {
