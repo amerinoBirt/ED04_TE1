@@ -7,6 +7,62 @@ public class CCuenta {
     private double saldo;
     private double tipoInteres;
 
+    /**
+     * @return the nombre
+     */
+    public String getNombre() {
+        return nombre;
+    }
+
+    /**
+     * @param nombre the nombre to set
+     */
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    /**
+     * @return the cuenta
+     */
+    public String getCuenta() {
+        return cuenta;
+    }
+
+    /**
+     * @param cuenta the cuenta to set
+     */
+    public void setCuenta(String cuenta) {
+        this.cuenta = cuenta;
+    }
+
+    /**
+     * @return the saldo
+     */
+    public double getSaldo() {
+        return saldo;
+    }
+
+    /**
+     * @param saldo the saldo to set
+     */
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    /**
+     * @return the tipoInteres
+     */
+    public double getTipoInteres() {
+        return tipoInteres;
+    }
+
+    /**
+     * @param tipoInteres the tipoInteres to set
+     */
+    public void setTipoInteres(double tipoInteres) {
+        this.tipoInteres = tipoInteres;
+    }
+
 
     public CCuenta() {
     }
@@ -17,16 +73,10 @@ public class CCuenta {
         saldo = sal;
     }
 
-    public void asignarNombre(String nom) {
-        setNombre(nom);
-    }
 
-    public String obtenerNombre() {
-        return getNombre();
-    }
 
     public double estado() {
-        return saldo;
+        return getSaldo();
     }
 
     public void ingresar(double cantidad) throws Exception {
@@ -44,23 +94,5 @@ public class CCuenta {
         saldo = saldo - (cantidad + 2);
     }
 
-    public String obtenerCuenta() {
-        return cuenta;
-    }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public double getTipoInteres() {
-        return tipoInteres;
-    }
-
-    public void setTipoInteres(double tipoInteres) {
-        this.tipoInteres = tipoInteres;
-    }
 }
